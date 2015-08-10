@@ -27,7 +27,7 @@
         function test_makeTitleCase_designatedWords()
         {
             $test_TitleCaseGenerator = new TitleCaseGenerator;
-            $input = "i am legend 'from the' future";
+            $input = "i am legend from the future";
 
             $result = $test_TitleCaseGenerator->makeTitleCase($input);
 
