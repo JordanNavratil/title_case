@@ -11,7 +11,13 @@ Input: i am legend
 Output: I Am Legend
 
 ----------Behavior 3----------
-Capitalize every letter in a string
+Do not capitalize designated words
 
-Input: i am legend
-Output: I AM LEGEND
+Input: i am legend from the future
+Output: I Am Legend from the Future
+
+----------Behavoir 4----------
+Capitalize designated words if they are the first word
+
+Input: from i am legend
+Output: From I Am Legend

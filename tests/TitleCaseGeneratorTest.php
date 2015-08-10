@@ -33,6 +33,17 @@
 
             $this->assertEquals("I Am Legend from the Future", $result);
         }
+
+        function test_makeTitleCase_somedesignatedWords()
+        {
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "from i am legend";
+
+            $result = $test_TitleCaseGenerator->MakeTitleCase($input);
+
+            $this->assertEquals("From I Am Legend", $result);
+        }
+
     }
 
 ?>

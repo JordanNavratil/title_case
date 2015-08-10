@@ -11,16 +11,24 @@
             $output_titlecased = array();
             foreach ($input_array_of_words as $word) {
 
-                if(in_array($word, $lowercase_ignore)) {
+                if($word == $input_array_of_words[0]) {
 
-                array_push($output_titlecased, $word);
-
-                } else {
-
-                array_push($output_titlecased, ucfirst($word));
+                    array_push($output_titlecased, ucfirst($word));
 
                 }
-        }
+
+                else if(in_array($word, $lowercase_ignore)) {
+
+                    array_push($output_titlecased, $word);
+
+                }    
+
+                else {
+
+                    array_push($output_titlecased, ucfirst($word));
+
+                }
+            }
         return implode(" ", $output_titlecased);
 
         }
