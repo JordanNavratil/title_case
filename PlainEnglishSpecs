@@ -1,0 +1,17 @@
+----------Behavior 1 ----------
+Capitalize the first letter of a single word
+
+Input: i
+Output: I
+
+----------Behavior 2----------
+Capitalize the first letter of a multiple word string
+
+Input: i am legend
+Output: I Am Legend
+
+----------Behavior 3----------
+Capitalize every letter in a string
+
+Input: i am legend
+Output: I AM LEGEND
