@@ -9,9 +9,9 @@
             $input_array_of_words = explode(" ", $input_title);
 
             $output_titlecased = array();
-            foreach ($lowercase_ignore as $word) {
+            foreach ($input_array_of_words as $word) {
 
-                if($in_array($word, $lowercase_ignore)) {
+                if(in_array($word, $lowercase_ignore)) {
 
                 array_push($output_titlecased, $word);
 
